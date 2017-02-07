@@ -1,4 +1,4 @@
-# Erlang Standard Context [![Build Status](https://travis-ci.org/kivra/context.svg?branch=master)](https://travis-ci.org/kivra/context-erlang)
+# Erlang Standard Context [![Build Status](https://travis-ci.org/kivra/context.svg?branch=master)](https://travis-ci.org/kivra/context)
 
 This is the Erlang Standard Context Package. Context is an opaque carrier of
 data. It it not meant to replace Erlang's standard ways of working with data
