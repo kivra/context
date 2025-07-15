@@ -16,6 +16,6 @@ repl:
 		rebar3 shell
 
 ci:
-		./rebar3 compile
-		./rebar3 eunit
-		./rebar3 dialyzer
+		rebar3 compile
+		rebar3 eunit
+		rebar3 dialyzer
