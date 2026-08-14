@@ -18,7 +18,8 @@ concurrency:
 jobs:
   ci:
     name: ci
-    runs-on: ubuntu-24.04
+    runs-on:
+      group: amd64-light-runners
 
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -67,7 +68,8 @@ jobs:
 
   release:
     if: github.ref == 'refs/heads/master' && startsWith(github.event.head_commit.message, 'no-release') == false
-    runs-on: ubuntu-24.04
+    runs-on:
+      group: amd64-light-runners
     steps:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
