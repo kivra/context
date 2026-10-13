@@ -138,7 +138,7 @@ is_key_test() ->
 
 keys_test() ->
     ?assertEqual([], keys(new())),
-    ?assertEqual([a, b], keys(set(set(new(), a, a), b, b))).
+    ?assertEqual([a, b], lists:sort(keys(set(set(new(), a, a), b, b)))).
 
 size_test() ->
     ?assertEqual(0, size(new())),
